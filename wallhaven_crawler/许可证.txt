@@ -1,0 +1,8 @@
+
+### 8. 安装开发版本
+
+在包的根目录下执行以下命令，以开发模式安装包：
+
+```bash
+cd e:\Desktop\2\wallhaven_crawler
+pip install -e .
