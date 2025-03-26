@@ -27,7 +27,7 @@ pip install wallhaven-crawler
 
 1.找到你想要下载的壁纸的网址
 
-![图片描述](images\URL.png)
+![图片描述](images/URL.png)
 
 https://wallhaven.cc/search?categories=010&purity=100&sorting=relevance&order=desc&ai_art_filter=1
 
