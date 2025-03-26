@@ -22,37 +22,38 @@ pip install wallhaven-crawler
 
 ## 基本使用
 
-### 快速开始
+### 基本教程案例
 
-```python
-from wallhaven_crawler import PowerfulCrawler
 
-# 初始化爬虫
-crawler = PowerfulCrawler(
-    base_url="https://wallhaven.cc/search?categories=010&purity=100",
-    save_dir="我的壁纸"
-)
+1.找到你想要下载的壁纸的网址
 
-# 开始爬取
-crawler.start(max_pages=5, max_images=20)
-```
+![图片描述](images\URL.png)
 
-### 需要登录的内容
+https://wallhaven.cc/search?categories=010&purity=100&sorting=relevance&order=desc&ai_art_filter=1
 
+2.找到你想要保存的路径
+
+3.设置你想下载的最大页数和最大图片数
+ max_pages=10, max_images=100
+
+4.运行代码
 ```python
 from wallhaven_crawler import PowerfulCrawler
 
 # 初始化爬虫（带登录信息）
 crawler = PowerfulCrawler(
-    base_url="https://wallhaven.cc/search?categories=010&purity=001",
-    save_dir="NSFW壁纸",
+    #你想下载的网址
+    base_url="https://wallhaven.cc/search?categories=010&purity=100&sorting=relevance&order=desc&ai_art_filter=1",
+    #你保存壁纸的路径
+    save_dir="E:\wallhaven-crawler\images",
+    #需要下载NSFW 内容才在需要填写下面“username”，“password”，否则不需要填写
     username="你的用户名",
     password="你的密码"
 )
-
 # 开始爬取
-crawler.start(max_pages=10, max_images=100)
+crawler.start(max_pages=10, max_images=5)
 ```
+5.完成效果
 
 ## 高级配置
 
