@@ -45,7 +45,8 @@ class PowerfulCrawler:
             soup = BeautifulSoup(response.text, 'html.parser')
             
             # 获取 CSRF token
-            csrf_token = soup.find('input', {'name': '_token'})['value']
+            csrf_token_element = soup.find('input', {'name': '_token'})
+            csrf_token = csrf_token_element['value'] if csrf_token_element else None if csrf_token_element else None
             
             # 准备登录数据
             login_data = {

@@ -1,0 +1,9 @@
+README.md
+setup.py
+examples/__init__.py
+examples/basic_usage.py
+wallhaven_crawler.egg-info/PKG-INFO
+wallhaven_crawler.egg-info/SOURCES.txt
+wallhaven_crawler.egg-info/dependency_links.txt
+wallhaven_crawler.egg-info/requires.txt
+wallhaven_crawler.egg-info/top_level.txt

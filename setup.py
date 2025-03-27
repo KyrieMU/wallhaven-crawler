@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="wallhaven_crawler",
-    version="0.1.0",
+    version="0.1.2",
     author="kyriechen",
     author_email="your.email@example.com",
     description="A powerful crawler for Wallhaven website",
